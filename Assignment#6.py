@@ -14,7 +14,7 @@ def main():
         if len(data) == 6:
             current_time = datetime.now().strftime("%c")
             date, _time, store, item, cost, payment = data
-            print("{}\t{}\t{}".format(item, cost, current_time))
+            print("{}\t{}\t{}\t{}\t{}\t{}\t{}".format(date, _time, store, item, cost, payment,current_time))
 
 main();
 #2
@@ -32,9 +32,9 @@ print(d);
 
 #4
 def add_measurement(feet, inches):
-    current_datetime = datetime.now()
-    print("Current Date and Time:", current_datetime)
-    total_inches = feet * 12 + inches
-    print("Total inches:", total_inches)
+    current_datetime = datetime.now();
+    print("Current Date and Time:", current_datetime);
+    total_inches = feet * 12 + inches;
+    print("Total inches:", total_inches);
     
-add_measurement(5, 18)
+add_measurement(5, 18);
